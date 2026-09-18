@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanaria Design</title>
+    <!-- لینکی ئایکۆنەکان (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ڕێکخستنی گشتی */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* بەشی پڕۆفایل */
+        .profile-section {
+            margin-bottom: 30px;
+        }
+
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(45deg, #8a2be2, #da70d6);
+            box-shadow: 0 0 25px rgba(138, 43, 226, 0.7);
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0f0c29;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #f0f0f0;
+        }
+
+        .bio {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        /* دوگمەکان */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e8e8e8;
+            color: #1a1a1a;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+            background-color: #fff;
+        }
+
+        .link-btn i {
+            font-size: 22px;
+        }
+
+        /* ڕەنگەکانی ئایکۆنەکان */
+        .fa-instagram { color: #E1306C; }
+        .fa-tiktok { color: #000000; }
+        .fa-snapchat { color: #FFFC00; text-shadow: 1px 1px 2px #000; }
+        .fa-telegram { color: #0088cc; }
+        .fa-facebook { color: #1877F2; }
+        .fa-youtube { color: #FF0000; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- بەشی وێنە و ناو -->
+        <div class="profile-section">
+            <div class="avatar-container">
+                <!-- لێرە وێنەی خۆت دابنێ (لینکی وێنەکەت لە جێی src دابنێ) -->
+                <img src="https://via.placeholder.com/150" alt="Sanaria Design" class="avatar">
+            </div>
+            <h1 class="username">@sanaria22</h1>
+            <p class="bio">
+                ئامادەین بۆ دروستکردنی: سیمینار • ڕاپۆرت • پۆستەر<br>
+                سیڤی • دیزاینی دەفتەر بۆ هەر بوارێک
+            </p>
+        </div>
+
+        <!-- دوگمەکانی سۆشیال میدیا -->
+        <div class="links-container">
+            <a href="https://instagram.com/username" class="link-btn" target="_blank">
+                <span>Instagram</span>
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+            <a href="https://tiktok.com/@username" class="link-btn" target="_blank">
+                <span>TikTok</span>
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://snapchat.com/add/username" class="link-btn" target="_blank">
+                <span>Snapchat</span>
+                <i class="fab fa-snapchat"></i>
+            </a>
+
+            <a href="https://t.me/username" class="link-btn" target="_blank">
+                <span>Telegram</span>
+                <i class="fab fa-telegram"></i>
+            </a>
+
+            <a href="https://facebook.com/username" class="link-btn" target="_blank">
+                <span>Facebook</span>
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://youtube.com/@username" class="link-btn" target="_blank">
+                <span>YouTube</span>
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
